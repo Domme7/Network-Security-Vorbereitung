@@ -3,7 +3,7 @@ import base64
 
 # TCP-Socket zum lauschen
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind(('localhost', 65432)) # Lauschen auf Port 65432
+    s.bind(('0.0.0.0', 65432)) # Lauschen auf Port 65432
     s.listen()
     print("Warten auf Verbindung...")
 
